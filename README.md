@@ -7,11 +7,9 @@ This repository has code that was originally written in Python 2. Due to the wor
 
 ## Getting started
 
-Press CLONE OR DOWNLOAD
-
-choose DOWNLOAD ZIP
-
-Unzip the zip file
+- Press CLONE OR DOWNLOAD
+- choose DOWNLOAD ZIP
+- Unzip the zip file
 
 ## IMPORTANT NOTE
 
@@ -37,14 +35,14 @@ microbit-demo-pxt.hex.zip
 microbit-gateway-pxt.hex.zip
 ```
 
-Unzip these, flash microbit-gateway-pxt.hex onto a gateway micro:bit,
-and flash microbit-demo-pxt.hex onto a number of other micro:bits
+Unzip these, flash `for_microbit/gateway-pxt.hex` onto a gateway micro:bit,
+and flash `microbit/demo-pxt.hex` onto a number of other micro:bits
 
 Power all the demo micro:bits from batteries.
 
 Plug the gateway micro:bit into your computer via the USB lead
 
-run the gateway.py python program (in Python2, note no Python 3 support yet)
+run the `gateway.py` python program (in Python2, note no Python 3 support yet)
 
 It will ask you to unplug your micro:bit, press ENTER, then plug it
 in and press ENTER again. Finally it will show you the port name of
@@ -67,23 +65,20 @@ Use this if your users will be writing MicroPython programs at the micro:bit rem
 In the src/for_microbit folder are some zip files, you need:
 
 ```
-microbit-demo-python.hex.zip
-microbit-gateway-python.hex.zip
+demo-python.hex.zip
+gateway-python.hex.zip
 ```
 
-Unzip these, flash microbit-gateway-python.hex onto a gateway micro:bit,
-and flash microbit-demo-python.hex onto a number of other micro:bits
-
-Power all the demo micro:bits from batteries.
-
-Plug the gateway micro:bit into your computer via the USB lead
-
-run the gateway.py python program (in Python2, note no Python 3 support yet)
+- Unzip these, flash `gateway-python.hex` onto a gateway micro:bit,
+and flash `demo-python.hex` onto a number of other micro:bits
+- Power all the demo micro:bits from batteries.
+- Plug the gateway micro:bit into your computer via the USB lead
+- run the gateway.py python program (in Python2, note no Python 3 support yet)
 
 It will ask you to unplug your micro:bit, press ENTER, then plug it
 in and press ENTER again. Finally it will show you the port name of
 the discovered micro:bit and ask you if you want to remember it - press
-Y then enter.
+`Y` then enter.
 
 The demo program is now running.
 
@@ -143,5 +138,3 @@ David Whale
 @whaleygeek
 
 8th June 2017
-
-

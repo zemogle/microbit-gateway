@@ -532,7 +532,7 @@ class SerialBase(object):
         n = len(data)
         try:
             b[:n] = data
-        except TypeError, err:
+        except TypeError as err:
             import array
             if not isinstance(b, array.array):
                 raise err

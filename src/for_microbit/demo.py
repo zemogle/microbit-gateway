@@ -6,11 +6,15 @@ radio.on()
 
 display.show("-")
 
+pin_val = False
 while True:
-    if button_a.was_pressed():
-        radio.send("A")
-    if button_b.was_pressed():
-        radio.send("B")
+
+    if pin0.is_touched():
+        display.show(Image.HAPPY)
+        radio.send("H")
+    else:
+        display.clear()
+    sleep(50)
 
     try:
         msg = radio.receive()
