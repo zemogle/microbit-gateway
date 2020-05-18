@@ -3,8 +3,7 @@ import time
 import os
 import json
 import sys
-from urllib.error import URLError
-from urllib.request import urlopen
+from urllib import urlopen
 import time
 import numpy as np
 import config
@@ -45,7 +44,7 @@ def wait_for_internet_connection():
             print("trying {}".format(TEST_URL))
             response = urlopen(TEST_URL,timeout=1)
             break
-        except URLError:
+        except IOError:
             awaiting_connection()
         except ConnectionRefusedError:
             awaiting_connection()
