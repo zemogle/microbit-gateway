@@ -3,13 +3,12 @@ import time
 import os
 import json
 import sys
-from urllib import urlopen
+from urllib2 import urlopen
 import time
 import numpy as np
 import config
 
 from websocket import create_connection
-
 
 from config import *
 
@@ -46,8 +45,7 @@ def wait_for_internet_connection():
             break
         except IOError:
             awaiting_connection()
-        except ConnectionRefusedError:
-            awaiting_connection()
+
     return
 
 
@@ -85,7 +83,6 @@ if __name__ == "__main__":
             ws = create_connection(URL)
             run(ws)
         except KeyboardInterrupt:
-            unicornhathd.off()
             ws.close()
             break
         except ConnectionResetError:

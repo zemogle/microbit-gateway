@@ -6,7 +6,6 @@ radio.on()
 
 display.show("-")
 
-pin_val = False
 while True:
 
     try:
@@ -15,7 +14,7 @@ while True:
             if len(msg) > 0:
                 if msg == 'W':
                     display.show(Image.MEH)
-                elif msg == 'H':
+                elif msg == 'Q':
                     display.show(Image.ASLEEP)
                 elif msg == 'C':
                     display.show(Image.ANGRY)
